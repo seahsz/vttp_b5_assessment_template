@@ -12,7 +12,7 @@ public class Main {
 
 		if (args.length != 1) {
 			System.err.println("No TTT configuration file provided");
-			System.err.println("Usage: java -cp classes vttp.batch5.sdf.task02.Main <TTT figure.txt>");
+			System.err.println("Usage: java -cp classes vttp.batch5.sdf.task02.Main <TTT/figure.txt>");
 			return;
 		}
 
