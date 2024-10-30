@@ -53,7 +53,6 @@ public class Main {
 	public static List<BikeEntry> parseCSV(File file) {
 
 		List<BikeEntry> BikeEntries = new ArrayList<>();
-		int count = 0; // check num lines in csv file (- header)
 
 		try (BufferedReader br = new BufferedReader(new FileReader(file))) {
 
@@ -65,7 +64,6 @@ public class Main {
 				String[] info = parseLine(line);
 
 				BikeEntries.add(BikeEntry.toBikeEntry(info));
-				count++;
 			}
 
 		} catch (FileNotFoundException ex) {
@@ -76,7 +74,6 @@ public class Main {
 			ex.printStackTrace();
 		}
 
-		System.out.println("Number of lines read in CSV: " + count);
 		return BikeEntries;
 
 	}
@@ -187,7 +184,7 @@ public class Main {
 
 		System.out.printf(
 				"The %s (position) recorded number of cyclists was in %s (season) , "+ 
-				"on a %s (day) in the month of %s (month) ."+
+				"on a %s (day) in the month of %s (month) . "+
 				"There was a total of %d (total) cyclists. "+
 				"The weather was %s (weather). %s (day) was %s.\n",
 				position, season, day, month, total, weather, day, holiday);
