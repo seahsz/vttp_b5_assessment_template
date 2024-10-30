@@ -186,7 +186,10 @@ public class Main {
 		}
 
 		System.out.printf(
-				"The %s recorded number of cyclists was in %s, on a %s in the month of %s. There was a total of %d cyclists. The weather was %s. %s was %s.\n",
+				"The %s (position) recorded number of cyclists was in %s (season) , "+ 
+				"on a %s (day) in the month of %s (month) ."+
+				"There was a total of %d (total) cyclists. "+
+				"The weather was %s (weather). %s (day) was %s.\n",
 				position, season, day, month, total, weather, day, holiday);
 
 		System.out.println();
